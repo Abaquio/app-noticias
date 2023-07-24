@@ -1,0 +1,90 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/Users/abaquio/notas-adhesivas-app/public/cuaderno.png'); /* Ruta de la imagen de fondo */
+  /* Opción 1: Si la imagen está dentro de una carpeta "assets" en "public" */
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../assets/cuaderno.png'); */
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.note {
+  position: relative;
+  width: 200px;
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  background-color: #fffbcc; /* Color de fondo de la nota amarilla */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.important {
+  background-color: #ffe6cc; /* Color de fondo de nota importante */
+}
+
+.note-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Reducir el margen inferior para evitar solapamiento */
+  overflow-wrap: break-word; /* Permitir el corte de palabras en el título */
+}
+
+.note-description {
+  font-size: 14px;
+  overflow-wrap: break-word; /* Permitir el corte de palabras en la descripción */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
